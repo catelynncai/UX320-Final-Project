@@ -1,11 +1,37 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-background-image: url("Water Background.png);
-background-color: #cccccc;
-}
-</style>
+  <style>
+    body {
+      background-image: url("Water Background.png");
+      background-color: #cccccc;
+      margin: 90;
+      height: 20vh; 
+    }
+
+    .container {
+      position: relative;
+      height: 500%; 
+    }
+
+    .content-box {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      background-color: white;
+      width: 90%; 
+      height: 90%; 
+      border-radius: 30px;
+      padding: 20px; 
+    }
+  </style>
+<body>
+  <div class="container">
+    <div class="content-box">
+    </div>
+  </div>
 </body>
 </html>
+
