@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-    <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Type</title>
-<style>
-   body {
-      background-image: url("Water Background.png");
-      background-color: #cccccc;
-      margin: 90;
-      height: 60vh; 
-      padding-top: 110px; ;
-      font-family:'Poppins';
-    }
+
+body {
+    background-image: url("Water Background.png");
+    background-color: #cccccc;
+    margin: 90;
+    height: 60vh; 
+    padding-top: 110px; ;
+    font-family:'Poppins';
+}
 
 .container {
     text-align: center; 
@@ -36,26 +30,10 @@
   color: rgb(0, 0, 0);
   font-size: 25px;
 }
- img {
+
+/*.img {
  max-width: 100%
  height: auto;
  padding: 50px;
  padding-left: 100px;
- }
-</style>
- <body>
-    <div class="container">
- </div>
- <div> 
-    <div class="content-box">
-        <div> 
-            <div class="header">
-                <h1> Carps and Cards </h1>
-        </div>
-        <div>
-            <div class="image">
-                <img src="Example Card.png" width="700" height="600">
-        </div>
- </div>
- </body>
-</html>
+}*/
