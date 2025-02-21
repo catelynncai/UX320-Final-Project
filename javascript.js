@@ -26,3 +26,13 @@
                 //if()
             };*/
 
+// inputs
+  /*function sayHello() {
+  const name = document.getElementById('username').value;
+  document.getElementById('output').innerText = 'Hi, ' + name + ', Welcome to my website!';
+  }*/
+  function generate(){
+  const name1 = document.getElementById('name1').value;
+  const name2 = document.getElementById('name2').value;
+  console.log("hi" + name1 + name2);
+  }
