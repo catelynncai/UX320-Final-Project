@@ -16,14 +16,16 @@
         <!--Bootstrap and Popper JS Link-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--Dropdown Code-->
-        <div class="dropdown">
+        <div class="dropdown" onchange="selectmenu">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Select an Occasion
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Occasion 1</a></li>
-            <li><a class="dropdown-item" href="#">Occasion 2</a></li>
-            <li><a class="dropdown-item" href="#">Occasion 3</a></li>
+            <li><a class="dropdown-item" value="birthday">Birthday</a></li>
+            <li><a class="dropdown-item" value="valentines">Valentine's</a></li>
+            <li><a class="dropdown-item" value="halloween">Halloween</a></li>
+            <li><a class="dropdown-item" value="christmas">Christmas</a></li>
+            <li><a class="dropdown-item" value="newyears">New Year's</a></li>
           </ul>
         </div>
         

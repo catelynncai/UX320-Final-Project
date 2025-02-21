@@ -1,5 +1,5 @@
 // holidays
-  const holidays = ["valentines", "halloween", "christmas", "new years", "birthday"]
+  const holidays = ["birthday","valentines", "halloween", "christmas", "new years"]
 
   //this doesnt work
   for (let i = 0; i < holidays.length; i++) {
@@ -18,3 +18,11 @@
   const anglerfish = ["", "anglerfish live in the deep sea"]
   const goblinshark = ["Gonna be goblin that candy up!", "scary"]
   const halloween = [piranhas, anglerfish, goblinshark]
+
+  /*let submitButton = document.createElement("button");
+            submitButton.innerText = "Generate";
+
+            submitButton.onclick = function() { 
+                //if()
+            };*/
+
