@@ -4,6 +4,12 @@
         <title>Class</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascript.js"></script>
+        <!--Other HTML pages-->
+        <link rel="import" href="fish2.html">
+        <!--Bootstrap and Popper CSS Link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
         <style>         
           body {
               background-image: url("Water Background.png");
@@ -43,10 +49,7 @@
           padding-left: 100px;
           }
         </style>
-        <script src="javascript.js"></script>
-        <!--Bootstrap and Popper CSS Link-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        
     </head>
     <body>
         <h1>Header Name</h1>
@@ -82,12 +85,15 @@
             <li><a class="dropdown-item" value="newyears">New Year's</a></li>
           </ul>
         </div>
-        
-        <!--Input Buttons-->
-        <input type="text" id="name1" placeholder="Enter your name">
-        <input type="text" id="name2" placeholder="Enter your recipient's name">
-        <button onclick="generate()"> See Results</button>
-        <p id="output"></p>
+
+        <!--User's Name-->
+        <form id="inputForm">
+          <label for="userNameInput">Enter Your Name:</label><br>
+          <input type="text" id="userNameInput" name="userNameInput" required><br><br>
+          <label for="recNameInput">Enter Your Recipient's Name:</label><br>
+          <input type="text" id="recNameInput" name="recNameInput" required><br><br>
+          <button type="button" onclick="storeInput()">Submit</button>
+        </form>
 
       </body>
 </html> 

@@ -4,8 +4,11 @@
         <title>Class</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascript.js"></script>
+        <!--Other HTML pages-->
+        <link rel="import" href="index.html">
         <!--CSS Stylization of Page-->
-        <style>         
+        <style>
           body {
                 background-image: url("Water Background.png");
                 background-color: #cccccc;
@@ -105,6 +108,7 @@
 
           }
     </style>
+
     </head>
 
   <!--HTML Structure of Page-->
@@ -120,7 +124,10 @@
            </div>
            <div>
                <div class="header2">
-                   <h1>Happy Birthday, John!</h1>
+                <!--Will have to add holiday greeting variable and concat them together-->
+                  <!--Displays name input on card-->
+                   <h1 id="nameInput">Hi, </h1>
+                   <h1 id="name2Input">For </h1>
            </div>
            <div>
                <img src="whale thing.png" width="300" height="400">
@@ -132,5 +139,10 @@
                <div class="star2">
            </div>
     </div>
+    <script>
+      // takes "username input" and replaces "nameinput" id as the held value
+      document.getElementById('nameInput').textContent += localStorage.getItem('userNameInput');
+      document.getElementById('name2Input').textContent += localStorage.getItem('recNameInput');
+    </script>
   </body>
 </html>

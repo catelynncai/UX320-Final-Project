@@ -34,5 +34,13 @@
   function generate(){
   const name1 = document.getElementById('name1').value;
   const name2 = document.getElementById('name2').value;
-  console.log("hi" + name1 + name2);
+
+  //console.log("hi" + name1 + name2);
+  //document.getElementById('greeting').innerText += 'Hi, ' + name1;
+  }
+
+  function storeInput() {
+    localStorage.setItem('userNameInput', document.getElementById('userNameInput').value);  // Store the input in local storage
+    localStorage.setItem('recNameInput', document.getElementById('recNameInput').value);
+    //window.location.href = 'fish2.html';  // Redirect to result page
   }
