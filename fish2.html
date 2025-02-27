@@ -1,101 +1,137 @@
-body {
-      background-image: url("Water Background.png");
-      background-color: #cccccc;
-      margin: 90;
-      height: 60vh; 
-      padding-top: 110px; ;
-      font-family:'Poppins';
-    }
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS Stylization of Page-->
+        <style>         
+          body {
+                background-image: url("Water Background.png");
+                background-color: #cccccc;
+                margin: 90;
+                height: 60vh; 
+                padding-top: 110px; ;
+                font-family:'Poppins';
+          }
 
-.container {
-    text-align: center; 
-}
-.content-box {
-    position: absolute;
-      top: 50%;
-      bottom: 50%;
-      left: 50%;
-      transform: translate(-50%, -40%);
-      background-color: white;
-      width:88%; 
-      height: 90%; 
-      border-radius: 30px;
-      padding: 20px; 
-}
-.header {
-  padding: 60px;
-  text-align: left;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  padding-top: 400px;
-  padding-left: 150px;
-}
-.content-box2 {
-    position: absolute;
-      top: 50%;
-      bottom: 50%;
-      left: 50%;
-      transform: translate(-30%, -50%);
-      background-color: #1774CA;
-      width:30%; 
-      height: 70%; 
-      padding: 20px;
-}
-    img {
- position: absolute;
- left: 57%;
- top:20%;
- transform: translate(-50%,50%);
- max-width: 100%
- height: auto;
+          .container {
+              text-align: center; 
+          }
+          .content-box {
+              position: absolute;
+                top: 50%;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, -40%);
+                background-color: white;
+                width:88%; 
+                height: 90%; 
+                border-radius: 30px;
+                padding: 20px; 
+          }
+          .header {
+            padding: 60px;
+            text-align: left;
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            padding-top: 400px;
+            padding-left: 150px;
+          }
+          .content-box2 {
+              position: absolute;
+                top: 50%;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-30%, -50%);
+                background-color: #1774CA;
+                width:30%; 
+                height: 70%; 
+                padding: 20px;
+          }
+              img {
+          position: absolute;
+          left: 57%;
+          top:20%;
+          transform: translate(-50%,50%);
+          max-width: 100%;
+          height: auto;
 
-}
+          }
 
-.header2 {
-  position: absolute;
-  top: 17%;
-  left: 57%;
-  padding: 20px;
-  text-align: center;
-  transform: translateX(-50%);
-  background: #1774CA;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  padding-top: 10px;
+          .header2 {
+            position: absolute;
+            top: 17%;
+            left: 57%;
+            padding: 20px;
+            text-align: center;
+            transform: translateX(-50%);
+            background: #1774CA;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding-top: 10px;
+          }
 
+          .star {
+            position: absolute;
+            right: 470px;
+            top: 350px;
+            width: 100px; 
+            transform: translate(-10%, -60%);
+            aspect-ratio: 1;
+            background: #ed652a;
+            clip-path: polygon(50% 0,
+              calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+              calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+            ); 
+                }
+          .star2 {
+            position: absolute;
+            right: 800px;
+            top: 400px;
+            width: 100px; 
+            transform: translate(-10%, -60%);
+            aspect-ratio: 1;
+            background: #ed652a;
+            clip-path: polygon(50% 0,
+              calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+              calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+            ); 
 
-}
+          }
+    </style>
+    </head>
 
-      .star {
-  position: absolute;
-  right: 470px;
-  top: 350px;
-  width: 100px; 
-  transform: translate(-10%, -60%);
-  aspect-ratio: 1;
-  background: #ed652a;
-  clip-path: polygon(50% 0,
-    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-   ); 
-      }
-.star2 {
-  position: absolute;
-  right: 800px;
-  top: 400px;
-  width: 100px; 
-  transform: translate(-10%, -60%);
-  aspect-ratio: 1;
-  background: #ed652a;
-  clip-path: polygon(50% 0,
-    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
-   ); 
-
-}
- 
+  <!--HTML Structure of Page-->
+  <body>
+    <div class="container"></div>
+    <div> 
+       <div class="content-box">
+           <div> 
+               <div class="header">
+                   <h1> Here is your card! </h1>
+                   <div>
+                       <div class="content-box2">
+           </div>
+           <div>
+               <div class="header2">
+                   <h1>Happy Birthday, John!</h1>
+           </div>
+           <div>
+               <img src="whale thing.png" width="300" height="400">
+           </div>
+           <div>
+               <div class="star">
+           </div>
+             <div>
+               <div class="star2">
+           </div>
+    </div>
+  </body>
+</html>
+          
