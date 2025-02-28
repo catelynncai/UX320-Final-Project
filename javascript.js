@@ -31,16 +31,16 @@
   const name = document.getElementById('username').value;
   document.getElementById('output').innerText = 'Hi, ' + name + ', Welcome to my website!';
   }*/
-  function generate(){
-  const name1 = document.getElementById('name1').value;
-  const name2 = document.getElementById('name2').value;
 
-  //console.log("hi" + name1 + name2);
-  //document.getElementById('greeting').innerText += 'Hi, ' + name1;
+  // Makes it so that the selected option appears in the dropdown box
+  function selectMenu(selectedItem) {
+    document.getElementById("dropdownButton").innerText = selectedItem;
   }
-
+  
+  // stores each input to variables to reuse in cards
   function storeInput() {
     localStorage.setItem('userNameInput', document.getElementById('userNameInput').value);  // Store the input in local storage
     localStorage.setItem('recNameInput', document.getElementById('recNameInput').value);
+    localStorage.setItem('holidaychoice', document.getElementById('holiday').value);
     //window.location.href = 'fish2.html';  // Redirect to result page
   }

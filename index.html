@@ -74,25 +74,27 @@
 
          <!--Dropdown Code-->
          <div class="dropdown" onchange="selectmenu">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button id="dropdownButton", class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Select an Occasion
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" value="birthday">Birthday</a></li>
-            <li><a class="dropdown-item" value="valentines">Valentine's</a></li>
-            <li><a class="dropdown-item" value="halloween">Halloween</a></li>
-            <li><a class="dropdown-item" value="christmas">Christmas</a></li>
-            <li><a class="dropdown-item" value="newyears">New Year's</a></li>
+            <li><a class="dropdown-item" id="holiday" value="birthday" onclick="selectMenu('Birthday')">Birthday</a></li>
+            <li><a class="dropdown-item" id="holiday" value="valentines" onclick="selectMenu('Valentine\'s')">Valentine's</a></li>
+            <li><a class="dropdown-item" id="holiday" value="halloween" onclick="selectMenu('Halloween')">Halloween</a></li>
+            <li><a class="dropdown-item" id="holiday" value="christmas" onclick="selectMenu('Christmas')">Christmas</a></li>
+            <li><a class="dropdown-item" id="holiday" value="newyears" onclick="selectMenu('New Year\'s')">New Year's</a></li>
           </ul>
         </div>
 
-        <!--User's Name-->
         <form id="inputForm">
+          <!--User's Name-->
           <label for="userNameInput">Enter Your Name:</label><br>
           <input type="text" id="userNameInput" name="userNameInput" required><br><br>
+          <!--Recipient's Name-->
           <label for="recNameInput">Enter Your Recipient's Name:</label><br>
           <input type="text" id="recNameInput" name="recNameInput" required><br><br>
-          <button type="button" onclick="storeInput()">Submit</button>
+          <!--Submit Button/Storing Input button, takes user to page 2-->
+          <a href="fish2.html"><button type="button" onclick="storeInput()">Submit</button></a>
         </form>
 
       </body>

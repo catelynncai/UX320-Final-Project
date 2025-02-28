@@ -128,6 +128,7 @@
                   <!--Displays name input on card-->
                    <h1 id="nameInput">Hi, </h1>
                    <h1 id="name2Input">For </h1>
+                   <p id="holidaychoice">The occasion is </p>
            </div>
            <div>
                <img src="whale thing.png" width="300" height="400">
@@ -143,6 +144,7 @@
       // takes "username input" and replaces "nameinput" id as the held value
       document.getElementById('nameInput').textContent += localStorage.getItem('userNameInput');
       document.getElementById('name2Input').textContent += localStorage.getItem('recNameInput');
+      document.getElementById('holidaychoice').textContent += localStorage.getItem('holiday');
     </script>
   </body>
 </html>
