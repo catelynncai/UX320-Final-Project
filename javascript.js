@@ -36,11 +36,15 @@
   function selectMenu(selectedItem) {
     document.getElementById("dropdownButton").innerText = selectedItem;
   }
+
+  function storeSelection() {
+    localStorage.setItem('holdaychoice', document.getElementById("dropdownButton").innerText)
+  }
   
   // stores each input to variables to reuse in cards
   function storeInput() {
     localStorage.setItem('userNameInput', document.getElementById('userNameInput').value);  // Store the input in local storage
     localStorage.setItem('recNameInput', document.getElementById('recNameInput').value);
-    localStorage.setItem('holidaychoice', document.getElementById('holiday').value);
+    //localStorage.setItem('holidaychoice', document.getElementById('holiday').value);
     //window.location.href = 'fish2.html';  // Redirect to result page
   }
