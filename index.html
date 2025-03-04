@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Class</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="javascript.js"></script>
         <!--Other HTML pages-->
-        <link rel="import" href="fish2.html">
-        <!--Bootstrap and Popper CSS Link-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+        <link rel="import" href="fish2.html, fishinside.html, fishback.html">
+        
         <style>         
           body {
               background-image: url("Water Background.png");
@@ -70,7 +68,7 @@
               </div>
               <div>
                   <div class="image">
-                      <img src="Example Card.png" width="700">
+                      <img src="Example Card.png" alt="example fish card" width="700">
                   </div>
               </div>
             <div>
@@ -79,15 +77,15 @@
               <form id="inputForm">
                 <!--User's Name-->
                 <label for="userNameInput">Enter Your Name:</label><br>
-                <input type="text" id="userNameInput" name="userNameInput" size="30" required><br><br>
+                <input type="text" id="userNameInput" name="userNameInput" style='width:100%'  required><br><br>
                 <!--Recipient's Name-->
                 <label for="recNameInput">Enter Your Recipient's Name:</label><br>
-                <input type="text" id="recNameInput" name="recNameInput" size="30" required><br><br>
+                <input type="text" id="recNameInput" name="recNameInput" style='width:100%' required><br><br>
                 <!--Message (NEED TO ADD STORAGE VARIABLE Textarea can't take inputs, can put this as a challenge in final presentation)--> 
                 <label for="messageInput">Add a Short Personalized Message:</label><br>
-                <input type="text" id="messageInput" name="messageInput" size="60" required><br><br>
+                <input type="text" id="messageInput" name="messageInput" style='width:100%'><br><br>
                 <!--Alternate Dropdwon not using bootstrap, look into storing value-->
-                <label for="holidayInput">Select the Ocassion for the Card:</label><br>
+                <label for="holidayInput">Select the Ocassion for the Card:</label>
                     <select name="holidayInput" id="holidayInput">
                       <option value="birthday">Birthday</option>
                       <option value="valentines">Valentine's</option>
@@ -97,7 +95,8 @@
                     </select>
                 <br><br>
                 <!--Submit Button/Storing Input button, takes user to page 2-->
-                <a href="fish2.html"><button type="button" onclick="storeInput()">Submit</button></a>
+                <button type="button" onclick="storeInput()"></button>
+                <!--<a href="fish2.html"><button type="button" onclick="storeInput()">Generate My Card</button></a>--!>
               </form>
             </div>
           </div>
