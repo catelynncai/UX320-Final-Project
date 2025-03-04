@@ -37,6 +37,7 @@
     document.getElementById("dropdownButton").innerText = selectedItem;
   }
 
+  // this doesn't work
   function storeSelection() {
     localStorage.setItem('holdaychoice', document.getElementById("dropdownButton").innerText)
   }

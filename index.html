@@ -19,9 +19,6 @@
               font-family:'Poppins';
           }
 
-          .container {
-              text-align: center; 
-          }
           .content-box {
               position: absolute;
                 top: 50%;
@@ -37,7 +34,6 @@
           .header {
             padding: 30px;
             text-align: center;
-            background: #ffffff;
             color: rgb(165, 27, 27);
             font-size: 25px;
           }
@@ -48,54 +44,67 @@
           padding: 10px;
           padding-left: 100px;
           }
-        </style>
+
+          .inputmenu {
+          width: 20%;
+          height: 5%;
+          position: absolute;
+          top: 25%;
+          right: 20%;
+              
+          }
+
+
+      </style>
         
     </head>
     <body>
-        <h1>Header Name</h1>
-
         <!--Bootstrap and Popper JS Link-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
        
         <!--Card Base Code-->
-        <div class="container">
-        </div>
         <div> 
            <div class="content-box">
-               <div> 
-                   <div class="header">
-                       <h1> Carps and Cards </h1>
-               </div>
-               <div>
-                   <div class="image">
-                       <img src="Example Card.png" width="700">
-               </div>
-        </div>
+              <div class="header">
+                  <h1> Carps and Cards </h1>
+              </div>
+              <div>
+                  <div class="image">
+                      <img src="Example Card.png" width="700">
+                  </div>
+              </div>
+            <div>
 
-         <!--Dropdown Code, Storing code doesn't work-->
-         <div class="dropdown" onchange=storeSelection()>
-          <button id="dropdownButton", class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Select an Occasion
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" id="holiday" value="birthday" onclick="selectMenu('Birthday')">Birthday</a></li>
-            <li><a class="dropdown-item" id="holiday" value="valentines" onclick="selectMenu('Valentine\'s')">Valentine's</a></li>
-            <li><a class="dropdown-item" id="holiday" value="halloween" onclick="selectMenu('Halloween')">Halloween</a></li>
-            <li><a class="dropdown-item" id="holiday" value="christmas" onclick="selectMenu('Christmas')">Christmas</a></li>
-            <li><a class="dropdown-item" id="holiday" value="newyears" onclick="selectMenu('New Year\'s')">New Year's</a></li>
-          </ul>
-        </div>
-
-        <form id="inputForm">
-          <!--User's Name-->
-          <label for="userNameInput">Enter Your Name:</label><br>
-          <input type="text" id="userNameInput" name="userNameInput" required><br><br>
-          <!--Recipient's Name-->
-          <label for="recNameInput">Enter Your Recipient's Name:</label><br>
-          <input type="text" id="recNameInput" name="recNameInput" required><br><br>
-          <!--Submit Button/Storing Input button, takes user to page 2-->
-          <a href="fish2.html"><button type="button" onclick="storeInput()">Submit</button></a>
-        </form>
+            <div class="inputmenu">
+              <form id="inputForm">
+                <!--User's Name-->
+                <label for="userNameInput">Enter Your Name:</label><br>
+                <input type="text" id="userNameInput" name="userNameInput" size="30" required><br><br>
+                <!--Recipient's Name-->
+                <label for="recNameInput">Enter Your Recipient's Name:</label><br>
+                <input type="text" id="recNameInput" name="recNameInput" size="30" required><br><br>
+                <!--Message (NEED TO ADD STORAGE VARIABLE Textarea can't take inputs, can put this as a challenge in final presentation)--> 
+                <label for="messageInput">Add a Short Personalized Message:</label><br>
+                <input type="text" id="messageInput" name="messageInput" size="60" required><br><br>
+                <!--Dropdown menu! storing code doesn't work-->
+                <label for="holiday">Select the Occasion:</label><br>
+                <div class="dropdown" onchange=storeSelection()>
+                  <button id="dropdownButton", class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select an Occasion
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="holiday" value="birthday" onclick="selectMenu('Birthday')">Birthday</a></li>
+                    <li><a class="dropdown-item" id="holiday" value="valentines" onclick="selectMenu('Valentine\'s')">Valentine's</a></li>
+                    <li><a class="dropdown-item" id="holiday" value="halloween" onclick="selectMenu('Halloween')">Halloween</a></li>
+                    <li><a class="dropdown-item" id="holiday" value="christmas" onclick="selectMenu('Christmas')">Christmas</a></li>
+                    <li><a class="dropdown-item" id="holiday" value="newyears" onclick="selectMenu('New Year\'s')">New Year's</a></li>
+                  </ul>
+                </div> <br><br>
+                <!--Submit Button/Storing Input button, takes user to page 2-->
+                <a href="fish2.html"><button type="button" onclick="storeInput()">Submit</button></a>
+              </form>
+            </div>
+          </div>
 
       </body>
 </html> 
