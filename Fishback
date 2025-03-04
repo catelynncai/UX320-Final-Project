@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS Stylization of Page-->
+        <style>         
+          body {
+                background-image: url("Water Background.png");
+                background-color: #cccccc;
+                margin: 90;
+                height: 60vh; 
+                padding-top: 110px; ;
+                font-family:'Poppins';
+          }
+
+          .container {
+              text-align: center; 
+          }
+          .content-box {
+              position: absolute;
+                top: 50%;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, -40%);
+                background-color: white;
+                width:88%; 
+                height: 90%; 
+                border-radius: 30px;
+                padding: 20px; 
+          }
+          .content-box2 {
+              position: absolute;
+                top: 50%;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-90%, -50%);
+                background-color: #1774CA;
+                width:30%; 
+                height: 70%; 
+                padding: 20px;
+          }
+              img {
+          position: absolute;
+          left: 57%;
+          top:20%;
+          transform: translate(-50%,50%);
+          max-width: 100%;
+          height: auto;
+
+          }
+
+          .header2 {
+            position: absolute;
+            top: 17%;
+            left: 57%;
+            padding: 20px;
+            text-align: center;
+            transform: translateX(-205%);
+            background: #1774CA;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding-top: 10px;
+          }
+          .header3 {
+            position: absolute;
+            top: 50%;
+            left: 57%;
+            padding: 20px;
+            text-align: left;
+            transform: translateX(-130%);
+            background: #1774CA;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding-top: 10px;
+          }
+
+    </style>
+    </head>
+
+  <!--HTML Structure of Page-->
+  <body>
+    <div class="container"></div>
+    <div> 
+       <div class="content-box">
+           <div> 
+                       <div class="content-box2">
+           </div>
+           <div>
+               <div class="header2">
+                   <h1>Fun Fact!</h1>
+    </div>
+    <div>
+      <div class="header3">
+        <p1>From December to February, gray whales <br> seek warmer waters and migrate south, making <br> winter the best season for whale watching <br> for places on the North American west coast, <br>like the state of California.</p1>
+    </div>
+  </body>
+</html>
