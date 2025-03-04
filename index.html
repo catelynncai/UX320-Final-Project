@@ -86,20 +86,16 @@
                 <!--Message (NEED TO ADD STORAGE VARIABLE Textarea can't take inputs, can put this as a challenge in final presentation)--> 
                 <label for="messageInput">Add a Short Personalized Message:</label><br>
                 <input type="text" id="messageInput" name="messageInput" size="60" required><br><br>
-                <!--Dropdown menu! storing code doesn't work-->
-                <label for="holiday">Select the Occasion:</label><br>
-                <div class="dropdown" onchange=storeSelection()>
-                  <button id="dropdownButton", class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Select an Occasion
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="holiday" value="birthday" onclick="selectMenu('Birthday')">Birthday</a></li>
-                    <li><a class="dropdown-item" id="holiday" value="valentines" onclick="selectMenu('Valentine\'s')">Valentine's</a></li>
-                    <li><a class="dropdown-item" id="holiday" value="halloween" onclick="selectMenu('Halloween')">Halloween</a></li>
-                    <li><a class="dropdown-item" id="holiday" value="christmas" onclick="selectMenu('Christmas')">Christmas</a></li>
-                    <li><a class="dropdown-item" id="holiday" value="newyears" onclick="selectMenu('New Year\'s')">New Year's</a></li>
-                  </ul>
-                </div> <br><br>
+                <!--Alternate Dropdwon not using bootstrap, look into storing value-->
+                <label for="holidayInput">Select the Ocassion for the Card:</label><br>
+                    <select name="holidayInput" id="holidayInput">
+                      <option value="birthday">Birthday</option>
+                      <option value="valentines">Valentine's</option>
+                      <option value="halloween">Halloween</option>
+                      <option value="christmas">Christmas</option>
+                      <option value="newyears">New Year's</option>
+                    </select>
+                <br><br>
                 <!--Submit Button/Storing Input button, takes user to page 2-->
                 <a href="fish2.html"><button type="button" onclick="storeInput()">Submit</button></a>
               </form>

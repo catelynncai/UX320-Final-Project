@@ -1,11 +1,5 @@
 // holidays
   const holidays = ["birthday","valentines", "halloween", "christmas", "new years"]
-
-  //this doesnt work
-  for (let i = 0; i < holidays.length; i++) {
-              let btn = document.createElement("button");
-              btn.innerText = holidays[i].text;
-  }
   
   // valentines
   const angelfish = ["", "french angelfish mate for life"]
@@ -39,13 +33,15 @@
 
   // this doesn't work
   function storeSelection() {
-    localStorage.setItem('holdaychoice', document.getElementById("dropdownButton").innerText)
+    localStorage.setItem('holidaychoice', document.getElementById("dropdownButton").innerText)
   }
   
   // stores each input to variables to reuse in cards
   function storeInput() {
     localStorage.setItem('userNameInput', document.getElementById('userNameInput').value);  // Store the input in local storage
-    localStorage.setItem('recNameInput', document.getElementById('recNameInput').value);
+    localStorage.setItem('recNameInput', document.getElementById('recNameInput').value); // Store input in local storage
+    localStorage.setItem('messageInput', document.getElementById('messageInput').value); // stores message in local storage
+    localStorage.setItem('holiday', document.getElementById('holidayInput').innerHTML); // stores message in local storage
     //localStorage.setItem('holidaychoice', document.getElementById('holiday').value);
     //window.location.href = 'fish2.html';  // Redirect to result page
   }
