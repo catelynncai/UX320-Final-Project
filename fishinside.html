@@ -102,6 +102,7 @@
            </div>
            <div>
             <div class="rectangle">
+              
            </div>
            <div>
             <img src="Bubble.png" class= img width="150" height="150">
@@ -112,8 +113,18 @@
            <div>
             <img src="Inside Whale.png" class= img3 width="400" height="400">
            </div>
+           <p id="pun"> your fish pun: </p>
+           <p id="message">Message:</p>
+
+           <!--previous/next page buttons-->
            <a href="fish2.html"><button onclick="fishinside.html">Previous Page</button></a>
            <a href="fishback.html"><button onclick="fishinside.html">Next Page</button></a>
            
+           <script>
+            // takes selected pun and puts it on the page
+            document.getElementById('pun').textContent += localStorage.getItem('punvar');
+            // takes custom message from storage and puts it on the page
+            document.getElementById('message').textContent += localStorage.getItem('messageInput');
+           </script>
   </body>
 </html>

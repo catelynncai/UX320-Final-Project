@@ -97,10 +97,14 @@
     </div>
     <div>
       <div class="header3">
-        <p1>From December to February, gray whales <br> seek warmer waters and migrate south, making <br> winter the best season for whale watching <br> for places on the North American west coast, <br>like the state of California.</p1>
+        <p id="fact"> your fish fact: </p>
     </div>
     <a href="fishinside.html"><button onclick="fishinside.html">Previous Page</button></a>
+
+    <!--regenerate/restart button-->
     <button onclick="index.html" onclick="regenerate()">Restart</button>
-    <!--Figure out how to regenerate-->
+    <script>
+      document.getElementById('fact').textContent += localStorage.getItem('factvar');
+    </script>
   </body>
 </html>
