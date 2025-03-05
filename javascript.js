@@ -1,40 +1,61 @@
- // valentines
- const angelfish = ["", "french angelfish mate for life"]
- const seahorse = ["", "seahorses mate for life"]
- const koi = ["you've got me feeling koi around you", "in asian countries, koi are a symbol of love and prosperity"]
- const valentines = [angelfish, seahorse, koi]
-
-  // halloween
-  const piranhas = ["", "piranhas are scary"]
-  const anglerfish = ["", "anglerfish live in the deep sea"]
-  const goblinshark = ["Gonna be goblin that candy up!", "scary"]
-  const halloween = [piranhas, anglerfish, goblinshark]
-
   // stores each input to variables to reuse in cards
   function storeInput() {
     localStorage.setItem('userNameInput', document.getElementById('userNameInput').value);  // Store the input in local storage
     localStorage.setItem('recNameInput', document.getElementById('recNameInput').value); // Store input in local storage
     localStorage.setItem('messageInput', document.getElementById('messageInput').value); // stores message in local storage
-    //localStorage.setItem('holiday', document.getElementById('holidayInput').value); // stores holiday in local storage
-    
-    //window.location.href = 'fish2.html';  // Redirect to result page
+    localStorage.setItem('holiday', document.getElementById('holidayInput').innerHTML); // stores holiday in local storage
 
-    //selectRandom()
+    // Store selected value from the dropdown in local storage
+    const holidaySelect = document.getElementById('holidayInput');
+    const selectedHoliday = holidaySelect.options[holidaySelect.selectedIndex].value;
+    localStorage.setItem('holidayInput', selectedHoliday);
+
+    console.log(document.getElementById('userNameInput').value)
+    console.log(document.getElementById('recNameInput').value)
+    console.log(document.getElementById('messageInput').value)
+    console.log(document.getElementById('holidayInput').value)
+    
+
+    selectRandom()
+    
   }
 
 
-  //figuring out array stuff
+  //picking fish for the card
   function selectRandom(){
-    const holidaychoice = getItem(holiday)
-    console.log(holidaychoice)
+    // SELECTED VALENTINES
+    if (document.getElementById('holidayInput').value=="valentines"){
+        //fish data
+          const angelfish = ["angelfish", "fishpun", "french angelfish mate for life"]
+          const seahorse = ["seahorse", "fishpun", "seahorses mate for life"]
+          const koi = ["koi", "you've got me feeling koi around you", "in asian countries, koi are a symbol of love and prosperity"]
+        //possible fish
+          const valentines = [angelfish, seahorse, koi]
 
-    
-    if (holidaychoice = "Valentine's"){
-      const holidayfish = valentines[Math.floor(Math.random() * valentines.length)];
-      console.log(holidayfish)
-    }else{
-      console.log("i fucked up")
+        // random fish selection
+        const number = Math.floor(Math.random() * valentines.length);
+        console.log(number);
+        let fish = valentines[number][0];
+        let fishpun = valentines[number][1];
+        let fishfact = valentines[number][2];
+        console.log("fish: " + fish + "pun:" + fishpun + "fact: " + fishfact)
     }
+
+    // SELECTED HALLOWEEN
+    if (document.getElementById('holidayInput').value=="halloween"){
+      const piranhas = ["piranha", "fishpun", "piranhas are scary"]
+      const anglerfish = ["anglerfish", "fishpun", "anglerfish live in the deep sea"]
+      const goblinshark = ["goblinshark", "Gonna be goblin that candy up!", "scary"]
+      const halloween = [piranhas, anglerfish, goblinshark]
+
+      // random fish selection
+      const number = Math.floor(Math.random() * halloween.length);
+      console.log(number);
+      let fish = halloween[number][0];
+      let fishpun = halloween[number][1];
+      let fishfact = halloween[number][2];
+      console.log("fish: " + fish + "pun:" + fishpun + "fact: " + fishfact)
+  }
     
   }
 
