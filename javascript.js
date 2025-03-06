@@ -25,11 +25,12 @@
     // SELECTED VALENTINES
     if (document.getElementById('holidayInput').value=="valentines"){
         //fish data
-          const angelfish = ["angelfish", "angelfishpun", "french angelfish mate for life"]
-          const seahorse = ["seahorse", "seahorsefishpun", "seahorses mate for life"]
-          const koi = ["koi", "you've got me feeling koi around you", "in asian countries, koi are a symbol of love and prosperity"]
-        //possible fish
-          const valentines = [angelfish, seahorse, koi]
+          const angelfish = ["angelfish", "You're my angel. Happy Valentine's!", "French angelfish are monogamous and form lifelong pairs at a young age. Together, they live, travel, hunt and defend their territory."]
+          const seahorse = ["seahorse", "Let's horse around together. Happy Valentine's", "Some seahorse couples like to spend quality time together and will stay mates for life"]
+          const koi = ["koi", "You've got me feeling all koi around you...", "In Asian countries, koi are a symbol of love and prosperity."]
+          const humpback = ["humpback", "Whale you be my Valentine?", "Humpback whales show a lot of romantic behavior, nudging each other, presenting their bellies, and singing complex songs to attract mates."];
+          //possible fish
+          const valentines = [angelfish, seahorse, koi, humpback]
 
         // random fish selection
         const number = Math.floor(Math.random() * valentines.length);
@@ -42,14 +43,14 @@
         localStorage.setItem('factvar', fishfact); // stores fact in local storage
     }
 
-    // SELECTED BIRTHDAYS (WIP)
+    // SELECTED BIRTHDAYS 
     if (document.getElementById('holidayInput').value=="birthday"){
       //fish data
-        const angelfish = ["angelfish", "angelfishpun", "french angelfish mate for life"]
-        const seahorse = ["seahorse", "seahorsefishpun", "seahorses mate for life"]
-        const koi = ["koi", "you've got me feeling koi around you", "in asian countries, koi are a symbol of love and prosperity"]
+        const minnow = ["minnow", "Let minnow what you want for your birthday!", "Minnows are most commonly fished in winter and spring!"]
+        const graywhale = ["graywhale", "You're whaley old! Happy Birthday!", "Winter is the best season for whale watching as gray whales migrate, seeking warmer waters."]
+        const trout = ["trout", "Have a trout-standing birthday!", "During winter, trout is one of the few species of fish you can get by ice-fishing!"]
       //possible fish
-        const birthday = [angelfish, seahorse, koi]
+        const birthday = [minnow, graywhale, trout]
 
       // random fish selection
       const number = Math.floor(Math.random() * birthday.length);
@@ -64,9 +65,9 @@
 
     // SELECTED HALLOWEEN
     if (document.getElementById('holidayInput').value=="halloween"){
-      const piranhas = ["piranha", "piranha fishpun", "piranhas are scary"]
-      const anglerfish = ["anglerfish", "anglerfish fishpun", "anglerfish live in the deep sea"]
-      const goblinshark = ["goblinshark", "Gonna be goblin that candy up!", "scary"]
+      const piranhas = ["piranha", "Just 'ranha wish you a Happy Halloween!", "Piranhas are known for their scary razor sharp teeth and voracious appetites."]
+      const anglerfish = ["anglerfish", "Don't get lured into the dark this Halloween!", "Anglerfish live in the dark depths of the sea and use their glowing lure to attract prey."]
+      const goblinshark = ["goblinshark", "Gonna be goblin that candy up this Halloween!", "scary"]
       const halloween = [piranhas, anglerfish, goblinshark]
 
       // random fish selection
@@ -83,9 +84,10 @@
 // SELECTED NEW YEARS (WIP)
 if (document.getElementById('holidayInput').value=="newyears"){
   //fish data
-    const angelfish = ["angelfish", "It's time to reel in the New Year!", "french angelfish mate for life"]
+    const herring = ["herring", "It's time to reel in the New Year!", "In Scandinavian, German and Polish communities, pickled herring is eaten at midnight to bring prosperity!"]
+    const carp = ["carp", "New year, new me! Carp diem!", "In Chinese tradition, carp is the most popular fish eaten before and after New Years to represent surplus!"]
   //possible fish
-    const newyears = [angelfish, seahorse, koi]
+    const newyears = [herring, carp]
 
   // random fish selection
   const number = Math.floor(Math.random() * newyears.length);
