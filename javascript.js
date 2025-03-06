@@ -9,21 +9,20 @@
     const selectedHoliday = holidaySelect.options[holidaySelect.selectedIndex].value;
     localStorage.setItem('holidayInput', selectedHoliday);
 
+    console.log("hi")
     console.log(document.getElementById('userNameInput').value)
     console.log(document.getElementById('recNameInput').value)
     console.log(document.getElementById('messageInput').value)
     console.log(document.getElementById('holidayInput').value)
-    
 
-    selectRandom()
-    
+    selectRandom();
   }
 
 
   //picking fish for the card
   function selectRandom(){
     // SELECTED VALENTINES
-    if (document.getElementById('holidayInput').value=="valentines"){
+    if (localStorage.getItem('holidayInput')=="valentines"){
         //fish data
           const angelfish = ["angelfish", "You're my angel. Happy Valentine's!", "French angelfish are monogamous and form lifelong pairs at a young age. Together, they live, travel, hunt and defend their territory."]
           const seahorse = ["seahorse", "Let's horse around together. Happy Valentine's", "Some seahorse couples like to spend quality time together and will stay mates for life"]
@@ -44,7 +43,7 @@
     }
 
     // SELECTED BIRTHDAYS 
-    if (document.getElementById('holidayInput').value=="birthday"){
+    if (localStorage.getItem('holidayInput')=="birthday"){
       //fish data
         const minnow = ["minnow", "Let minnow what you want for your birthday!", "Minnows are most commonly fished in winter and spring!"]
         const graywhale = ["graywhale", "You're whaley old! Happy Birthday!", "Winter is the best season for whale watching as gray whales migrate, seeking warmer waters."]
@@ -64,7 +63,7 @@
   }
 
     // SELECTED HALLOWEEN
-    if (document.getElementById('holidayInput').value=="halloween"){
+    if (localStorage.getItem('holidayInput')=="halloween"){
       const piranhas = ["piranha", "Just 'ranha wish you a Happy Halloween!", "Piranhas are known for their scary razor sharp teeth and voracious appetites."]
       const anglerfish = ["anglerfish", "Don't get lured into the dark this Halloween!", "Anglerfish live in the dark depths of the sea and use their glowing lure to attract prey."]
       const goblinshark = ["goblinshark", "Gonna be goblin that candy up this Halloween!", "scary"]
@@ -81,30 +80,34 @@
       localStorage.setItem('factvar', fishfact); // stores fact in local storage
   }
     
-// SELECTED NEW YEARS (WIP)
-if (document.getElementById('holidayInput').value=="newyears"){
-  //fish data
-    const herring = ["herring", "It's time to reel in the New Year!", "In Scandinavian, German and Polish communities, pickled herring is eaten at midnight to bring prosperity!"]
-    const carp = ["carp", "New year, new me! Carp diem!", "In Chinese tradition, carp is the most popular fish eaten before and after New Years to represent surplus!"]
-  //possible fish
-    const newyears = [herring, carp]
+  // SELECTED NEW YEARS (WIP)
+  if (localStorage.getItem('holidayInput')  =="newyears"){
+    //fish data
+      const herring = ["herring", "It's time to reel in the New Year!", "In Scandinavian, German and Polish communities, pickled herring is eaten at midnight to bring prosperity!"]
+      const carp = ["carp", "New year, new me! Carp diem!", "In Chinese tradition, carp is the most popular fish eaten before and after New Years to represent surplus!"]
+    //possible fish
+      const newyears = [herring, carp]
 
-  // random fish selection
-  const number = Math.floor(Math.random() * newyears.length);
-  console.log(number);
-  let fish = newyears[number][0];
-  localStorage.setItem('fishvar', fish); // stores fish in local storage
-  let fishpun = newyears[number][1];
-  localStorage.setItem('punvar', fishpun); // stores pun in local storage
-  let fishfact = newyears[number][2];
-  localStorage.setItem('factvar', fishfact); // stores fact in local storage
-}
+    // random fish selection
+    const number = Math.floor(Math.random() * newyears.length);
+    console.log(number);
+    let fish = newyears[number][0];
+    localStorage.setItem('fishvar', fish); // stores fish in local storage
+    let fishpun = newyears[number][1];
+    localStorage.setItem('punvar', fishpun); // stores pun in local storage
+    let fishfact = newyears[number][2];
+    localStorage.setItem('factvar', fishfact); // stores fact in local storage
   }
 
-function restart(){
-  // reset localstorage?
-}
+  console.log(localStorage.getItem('fishvar') + localStorage.getItem('punvar') + localStorage.getItem('factvar'));
+  }
 
 function regenerate(){
   // select other randoms based on storage
+  // THIS THING DOESNT WORK
+  console.log(localStorage.getItem('userNameInput'))
+  console.log(localStorage.getItem('recNameInput'))
+  console.log(localStorage.getItem('messageInput'))
+  console.log(localStorage.getItem('holidayInput'))
+  selectRandom();
 }
