@@ -101,7 +101,9 @@ if (document.getElementById('holidayInput').value=="newyears"){
 }
   }
 
-
+function restart(){
+  // reset localstorage?
+}
 
 function regenerate(){
   // select other randoms based on storage
