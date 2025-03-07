@@ -12,6 +12,7 @@
         <style> 
 
         button {
+          position: center;
           padding: 10px 20px;
           border-radius: 8px;
           font-size: 17px;
@@ -19,6 +20,15 @@
           color: #000000;
           cursor: pointer;
           background: transparent;
+          margin-top: 50%;
+          
+      
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20%;
         }
 
           body {
@@ -29,6 +39,7 @@
                 padding-top: 110px; ;
                 font-family:'Poppins';
           }
+    
 
           .container {
               text-align: center; 
@@ -45,8 +56,19 @@
                 border-radius: 30px;
                 padding: 20px; 
           }
+          .header {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            font-size: 50px;
+            transform: translateX(-50%);
+            font-weight: 400;
+            color: #2390ca;
+           
+          }
           .content-box2 {
               position: absolute;
+              flex:auto;
               border: solid black;
                 top: 50%;
                 bottom: 50%;
@@ -70,14 +92,48 @@
           }
           
           img {
-          left: 50px;
+          position: relative;
+          left: 90px;
           height: 300px;
           width: auto;
+          top: 250px ;
           }
-             
-              
 
-    
+          #message {
+            margin: 140px 0;
+        font-size: 30px;
+        text-align: center;
+        padding-left: 20%;
+        position: absolute;
+        top: 10%; 
+        left: 50%;
+        transform: translateX(-50%); 
+
+          }
+
+          #pun {
+            margin: 140px 0;
+        font-size: 30px;
+        text-align: center;
+        padding-right: 40%;
+        position: absolute;
+        top: 10%; 
+        left: 50%;
+        transform: translateX(-50%); 
+          }
+
+        #fact {
+          margin: 500px 0;
+        font-size: 25px;
+        text-align: center;
+        padding-right: 40%;
+        position: absolute;
+        top: 10%; 
+        left: 50%;
+        transform: translateX(-50%); 
+          
+        }
+
     </style>
     </head>
 
@@ -90,23 +146,31 @@
     </div>
     <div> 
        <div class="content-box">
-           <div>              
+           <div>  
+            <div>
+              <div class="button-container">
+              </div>            
                  <div class="content-box2">
                   <img id="insideimage" src="">
            </div>
            <div>
             <div class="rectangle">
-          </div>
-          </div>    
+            </div>
+            <div>
+              <div class="header">
+                <p1>Inside</p1>
+            </div>
+           
+          
 
            <p id="pun"> your fish pun: </p>
            <p id="message">Message:</p>
            <p id="fact"> your fish fact: </p>
            
-
+           <div class="button-container">
           <a href="fish2.html"><button>Flip to Previous Page</button></a>
           <a href="fishback.html"><button>Flip Next Page</button></a>
-
+           </div>
            
            <script>
             // takes selected pun and puts it on the page
