@@ -17,18 +17,20 @@
           border-radius: 8px;
           font-size: 17px;
           font-weight: 500;
-          color: #000000;
+          color: #ffffff;
           cursor: pointer;
-          background: transparent;
           margin-top: 50%;
-          
-      
+          background-color: #22b2ff;
+          border: none;
         }
 
         .button-container {
           display: flex;
           justify-content: space-between;
+          gap: 30px;
           margin-top: 20%;
+
+         
         }
 
           body {
@@ -96,17 +98,17 @@
           left: 90px;
           height: 300px;
           width: auto;
-          top: 250px ;
+          top: 210px ;
           }
 
           #message {
             margin: 140px 0;
         font-size: 30px;
-        text-align: center;
+        text-align: left;
         padding-left: 20%;
         position: absolute;
         top: 10%; 
-        left: 50%;
+        left: 55%;
         transform: translateX(-50%); 
 
           }
@@ -118,8 +120,9 @@
         padding-right: 40%;
         position: absolute;
         top: 10%; 
-        left: 50%;
-        transform: translateX(-50%); 
+        left: 40%;
+        transform: translateX(-25%); 
+
           }
 
         #fact {
@@ -128,9 +131,9 @@
         text-align: center;
         padding-right: 40%;
         position: absolute;
-        top: 10%; 
-        left: 50%;
-        transform: translateX(-50%); 
+        top: 20%; 
+        left: 40%;
+        transform: translateX(-25%); 
           
         }
 
@@ -163,13 +166,13 @@
            
           
 
-           <p id="pun"> your fish pun: </p>
-           <p id="message">Message:</p>
-           <p id="fact"> your fish fact: </p>
+           <p id="pun"> </p>
+           <p id="message"></p>
+           <p id="fact">  </p>
            
            <div class="button-container">
-          <a href="fish2.html"><button>Flip to Previous Page</button></a>
-          <a href="fishback.html"><button>Flip Next Page</button></a>
+          <a href="fish2.html"><button>Previous Page</button></a>
+          <a href="fishback.html"><button>Next Page</button></a>
            </div>
            
            <script>
