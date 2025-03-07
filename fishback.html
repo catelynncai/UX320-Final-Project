@@ -18,10 +18,19 @@
                 padding-top: 110px; ;
                 font-family:'Poppins';
           }
-
-          .container {
-              text-align: center; 
+          
+          button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #000000;
+            cursor: pointer;
+            background: transparent;
           }
+
+
+          /*the white container */
           .content-box {
               position: absolute;
                 top: 50%;
@@ -34,6 +43,8 @@
                 border-radius: 30px;
                 padding: 20px; 
           }
+
+          /*the card*/
           .content-box2 {
               position: absolute;
                 top: 50%;
@@ -45,70 +56,38 @@
                 height: 70%; 
                 padding: 20px;
           }
-              img {
-          position: absolute;
-          left: 57%;
-          top:20%;
-          transform: translate(-50%,50%);
-          max-width: 100%;
-          height: auto;
 
-          }
-
-          .header2 {
-            position: absolute;
-            top: 17%;
-            left: 57%;
-            padding: 20px;
-            text-align: center;
-            transform: translateX(-205%);
-            background: #1774CA;
-            color: rgb(255, 255, 255);
-            font-size: 20px;
-            padding-top: 10px;
-          }
-          .header3 {
-            position: absolute;
-            top: 50%;
-            left: 57%;
-            padding: 20px;
-            text-align: left;
-            transform: translateX(-130%);
-            background: #1774CA;
-            color: rgb(255, 255, 255);
-            font-size: 20px;
-            padding-top: 10px;
-          }
 
     </style>
     </head>
 
   <!--HTML Structure of Page-->
-  <body>
-    <div class="container"></div>
-    <div> 
+  <body> 
        <div class="content-box">
-           <div> 
-              <div class="content-box2">
+          <div> 
+            <div class="content-box2">
            </div>
-           <div>
-               <div class="header2">
-                   <h1>Fun Fact!</h1>
-    </div>
-    <div>
-      <div class="header3">
-        <p id="fact"> your fish fact: </p>
-        <img id="backimage">
-    </div>
-    <a href="fishinside.html"><button onclick="fishinside.html">Previous Page</button></a>
+          <div>
+    <h4>This card was created using Cards & Carps!<br> Thank you for supporting us!</h4>
+
+    <!--previous button-->
+    <a href="fishinside.html"><button>Flip to Previous Page</button></a>
 
     <!--regenerate/restart button-->
-    <a href="index.html"><button onclick="index.html" onclick="restart()">Restart</button></a>
+    <a href="index.html"><button onclick="restart()">Restart</button></a>
+
+    <!--share/download/print buttons-->
+    <br>
+    <button>Share</button>
+    <br>
+    <button>Download</button>
+    <br>
+    <button>Print</button>
     <!-- STILL NEED TO MAKE REGENERATE BUTTON AND FUNCTION
     <button onclick="regenerate()">Regenerate</button></a>
   -->    
     <script>
-      document.getElementById('fact').textContent += localStorage.getItem('factvar');
+      
     </script>
   </body>
 </html>

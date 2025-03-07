@@ -8,7 +8,61 @@
         <!--Other HTML pages-->
         <link rel="import" href="fish2.html, fishinside.html, fishback.html">
         
-        <style>         
+        <style>  
+        
+        label{
+          font-size: 1.1rem;
+        }
+
+        button {
+          padding: 10px 20px;
+          border-radius: 8px;
+          font-size: 17px;
+          font-weight: 500;
+          color: #000000;
+          cursor: pointer;
+          background: transparent;
+        }
+
+        button:hover{
+          background-color:rgb(172, 204, 237);
+        }
+
+        input{
+          background-color: #dfe4e5;
+          border: none;
+          padding: 1rem;
+          font-size: 1rem;
+          width: 13em;
+          border-radius: 1rem;
+        }
+
+        input:focus{
+          background-color: aliceblue;
+          color:black;
+        }
+
+        select {
+          padding: 10px 20px;
+          border-radius: 8px;
+          font-size: 17px;
+          font-weight: 500;
+          color: #000000;
+          cursor: pointer;
+          background: transparent;
+        }
+
+
+        /*select{
+          background-color: #f4fafa;
+          border: none;
+          padding: .5rem;
+          font-size: 1rem;
+          width: 13em;
+          border-radius: 1rem;
+          color: rgb(0, 0, 0);
+        }*/
+           
           body {
               background-image: url("Water Background.png");
               margin: 90;
@@ -32,7 +86,7 @@
           .header {
             padding: 30px;
             text-align: center;
-            color: rgb(165, 27, 27);
+            color: rgb(27, 48, 165);
             font-size: 25px;
           }
 
@@ -73,13 +127,14 @@
               <form id="inputForm">
                 <!--User's Name-->
                 <label for="userNameInput">Enter Your Name:</label><br>
-                <input type="text" id="userNameInput" name="userNameInput" style='width:100%'  required><br><br>
+                <input type="text" id="userNameInput" placeholder="John Doe" name="userNameInput" style='width:100%'  required><br><br>
                 <!--Recipient's Name-->
                 <label for="recNameInput">Enter Your Recipient's Name:</label><br>
-                <input type="text" id="recNameInput" name="recNameInput" style='width:100%' required><br><br>
+                <input type="text" id="recNameInput" placeholder="Jane Doe" name="recNameInput" style='width:100%' required><br><br>
                 <!--Message (NEED TO ADD STORAGE VARIABLE Textarea can't take inputs, can put this as a challenge in final presentation)--> 
                 <label for="messageInput">Add a Short Personalized Message:</label><br>
-                <input type="text" id="messageInput" name="messageInput" style='width:100%'><br><br>
+                <input type="text" id="messageInput" placeholder="Happy Birthday Jane!" name="messageInput" style='width:100%'><br><br>
+    
                 <!--Alternate Dropdown not using bootstrap, look into storing value-->
                 <label for="holidayInput">Select the Ocassion for the Card:</label>
                     <select name="holidayInput" id="holidayInput">
@@ -91,10 +146,10 @@
                 <br><br>
               
               <!-- USED FOR DEBUGGING VVVV-->
-              <!--<button type="button" onclick="storeInput()">Check stored input</button>-->
+              <button type="button" onclick="storeInput()">Check stored input</button>
 
                 <!--Submit Button/Storing Input button, takes user to page 2-->
-                <a href="fish2.html"><button type="button" onclick="storeInput()">Generate My Card</button></a>
+                <a href="fish2.html"><button type="button" id="generate" onclick="storeInput()">Generate My Card</button></a>
               </form>
             </div>
           </div>

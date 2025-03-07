@@ -9,7 +9,18 @@
         <link rel="import" href="fish2.html, index.html, fishback.html">
         
         <!--CSS Stylization of Page-->
-        <style>         
+        <style> 
+
+        button {
+          padding: 10px 20px;
+          border-radius: 8px;
+          font-size: 17px;
+          font-weight: 500;
+          color: #000000;
+          cursor: pointer;
+          background: transparent;
+        }
+
           body {
                 background-image: url("Water Background.png");
                 background-color: #cccccc;
@@ -46,8 +57,8 @@
                 height: 70%; 
                 padding: 20px;
           }
+          
         
-
           .rectangle {
             position: absolute;
             height: 717px;
@@ -57,40 +68,14 @@
             left: 50%;
             top: 50%;
           }
-          .img {
-          position: absolute;
-          left: 400px;
-          top: 20%;
-          transform: translateX(-50%);
-          max-width: 100%;
-          height: auto;
-        
-          }
-          .img2 {
-          position: absolute;
-          left: 700px;
-          top: 16%;
-          transform: translateX(-50%);
-          max-width: 100%;
-          height: auto;
-        
-          }
-        
-          .img3 {
-          position: absolute;
-          left: 550px;
-          top: 55%;
-          transform: translateX(-50%);
-          max-width: 100%;
-          height: auto;
+          
+          img {
+          left: 50px;
+          height: 300px;
+          width: auto;
           }
              
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 40%;
-
-        }
+              
 
     
     </style>
@@ -98,6 +83,8 @@
 
   <!--HTML Structure of Page-->
   <body>
+  <!--previous/next page buttons-->
+  
     <div class="container">
 
     </div>
@@ -105,33 +92,32 @@
        <div class="content-box">
            <div>              
                  <div class="content-box2">
+                  <img id="insideimage" src="">
            </div>
            <div>
             <div class="rectangle">
-              
-           </div>
-           <div>
-            <img src="Bubble.png" class= img width="150" height="150">
-           </div>
-           <div>
-            <img src="Bubble2.png" class= img2 width="150" height="150">
-           </div>
-           <div>
-            <img src="Inside Whale.png" class= img3 width="400" height="400">
-           </div>
+          </div>
+          </div>    
+
            <p id="pun"> your fish pun: </p>
            <p id="message">Message:</p>
-           <img id="insideimage">
+           <p id="fact"> your fish fact: </p>
+           
 
-           <!--previous/next page buttons-->
-           <a href="fish2.html"><button onclick="fishinside.html">Previous Page</button></a>
-           <a href="fishback.html"><button onclick="fishinside.html">Next Page</button></a>
+          <a href="fish2.html"><button>Flip to Previous Page</button></a>
+          <a href="fishback.html"><button>Flip Next Page</button></a>
+
            
            <script>
             // takes selected pun and puts it on the page
             document.getElementById('pun').textContent += localStorage.getItem('punvar');
+            // takes fact and puts it on the page
+            document.getElementById('fact').textContent += localStorage.getItem('factvar');
             // takes custom message from storage and puts it on the page
             document.getElementById('message').textContent += localStorage.getItem('messageInput');
+            // takes image and puts it on the page
+            document.getElementById('insideimage').src = localStorage.getItem('imagevar');
+            //localStorage,getItem('imagevar')
            </script>
   </body>
 </html>
