@@ -17,38 +17,8 @@
                 height: 60vh; 
                 padding-top: 110px; ;
                 font-family:'Poppins';
-          }
-          .header2 {
-          position: relative;
-          align-items: center;
-          left: 34%;
-          top: -50px;
-          font-size: 25px;
+          
         }
-
-          button {
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 17px;
-            font-weight: 500;
-            color: #000000;
-            cursor: pointer;
-            background: transparent;
-           
-            
-          }
-          .button-container {
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 17px;
-            font-weight: 500;
-            color: #000000;
-            cursor: pointer;
-            background: transparent;
-            align-items: end;
-           
-            
-          }
 
           /*the white container */
           .content-box {
@@ -63,7 +33,8 @@
                 border-radius: 30px;
                 padding: 20px; 
           }
-        
+     
+          
           /*the card*/
           .content-box2 {
               position: absolute;
@@ -78,11 +49,53 @@
           }
 
           .header {
-            top:20px; 
-            align-items: center;
+            position: relative;
+           text-align: center;
+           font-size: 24px;
+           color: #ffffffff;
+           top: 300px;
+           right: 13%;
+          }
+             
+          .header2 {
+          position: relative;
+          align-items: center;
+          left: 34%;
+          top: -70px;
+          font-size: 25px;
           }
 
-        
+      
+          .button-container {
+            position: absolute;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: transparent;
+            align-items: flex-end;
+            flex-direction: column;
+            display: flex;
+            right: 80px;
+            
+
+
+          }
+
+
+          button {
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-left: 30%;
+            left: 60%;
+            cursor: pointer;
+            background-color: #1774CA;
+            margin-bottom: 30px;
+           border: none;
+           
+
+          }
 
 
     </style>
@@ -101,9 +114,13 @@
 <div>
   <div class="header2">
 <h2> Back </h2>
+
     <!--previous button-->
     <a href="fishinside.html"><button>Flip to Previous Page</button></a>
 
+    <div class="restart">
+
+    
     <!--regenerate/restart button-->
     <a href="index.html"><button onclick="restart()">Restart</button></a>
 
