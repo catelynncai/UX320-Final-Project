@@ -64,37 +64,43 @@
           top: -70px;
           font-size: 25px;
           }
-
-      
+         
+         
+          
           .button-container {
-            position: absolute;
+            position:absolute;
             padding: 10px 20px;
-            border-radius: 8px;
             background: transparent;
             align-items: flex-end;
-            flex-direction: column;
             display: flex;
-            right: 80px;
+            right: 85px;
             
-
-
+          
           }
 
-
+          .previous-button-container {
+            position: absolute;
+            padding: 15px 40px;
+            align-items: flex-start;
+            right: 117%;
+            top: 170%;
+            flex-direction: column;
+            display: flex;
+       
+          }
           button {
             padding: 15px 40px;
             border-radius: 8px;
             font-size: 17px;
             font-weight: 500;
             color: #ffffff;
-            margin-left: 30%;
-            left: 60%;
             cursor: pointer;
             background-color: #1774CA;
             margin-bottom: 30px;
-           border: none;
-           
-
+            border: none;
+            width: 200px;
+            margin-left: 27%;
+            text-align: center;
           }
 
 
@@ -116,10 +122,11 @@
 <h2> Back </h2>
 
     <!--previous button-->
-    <a href="fishinside.html"><button>Flip to Previous Page</button></a>
+    <div class="previous-button-container">
+    <a href="fishinside.html"><button>Previous Page</button></a>
+    </div>
 
     <div class="restart">
-
     
     <!--regenerate/restart button-->
     <a href="index.html"><button onclick="restart()">Restart</button></a>
