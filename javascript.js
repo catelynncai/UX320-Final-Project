@@ -9,7 +9,6 @@
     const selectedHoliday = holidaySelect.options[holidaySelect.selectedIndex].value;
     localStorage.setItem('holidayInput', selectedHoliday);
 
-    console.log("hi")
     console.log(document.getElementById('userNameInput').value)
     console.log(document.getElementById('recNameInput').value)
     console.log(document.getElementById('messageInput').value)
@@ -86,7 +85,7 @@
       localStorage.setItem('imagevar', fishimage);
   }
     
-  // SELECTED NEW YEARS (WIP)
+  // SELECTED NEW YEARS
   if (localStorage.getItem('holidayInput')  =="newyears"){
     //fish data
       const herring = ["herring", "It's time to reel in the New Year!", "In Scandinavian, German and Polish communities, pickled herring is eaten at midnight to bring prosperity!","herring.jpg"]
@@ -109,13 +108,3 @@
 
   console.log(localStorage.getItem('fishvar') + localStorage.getItem('punvar') + localStorage.getItem('factvar'));
   }
-
-function regenerate(){
-  // select other randoms based on storage
-  // THIS THING DOESNT WORK
-  console.log(localStorage.getItem('userNameInput'))
-  console.log(localStorage.getItem('recNameInput'))
-  console.log(localStorage.getItem('messageInput'))
-  console.log(localStorage.getItem('holidayInput'))
-  selectRandom();
-}
