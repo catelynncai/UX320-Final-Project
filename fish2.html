@@ -26,10 +26,8 @@
             cursor: pointer;
             background: transparent;
           }
-
-          .container {
-              text-align: center; 
-          }
+          
+          /*container*/
           .content-box {
               position: absolute;
                 top: 50%;
@@ -42,15 +40,7 @@
                 border-radius: 30px;
                 padding: 20px; 
           }
-          .header {
-            padding: 60px;
-            text-align: left;
-            background: #ffffff;
-            color: rgb(0, 0, 0);
-            font-size: 20px;
-            padding-top: 400px;
-            padding-left: 150px;
-          }
+          /*card*/
           .content-box2 {
               position: absolute;
                 top: 50%;
@@ -62,20 +52,11 @@
                 height: 70%; 
                 padding: 20px;
           }
-          img {
-          position: absolute;
-          left: 57%;
-          top:20%;
-          transform: translate(-50%,50%);
-          max-width: 100%;
-          height: auto;
-
-          }
 
           .header2 {
             position: absolute;
-            top: 17%;
-            left: 50%;
+            top: 10%;
+            left: 20%;
             padding: 20px;
             text-align: left;
             transform: translateX(-50%);
@@ -84,35 +65,29 @@
             padding-top: 10px;
           }
 
+          .nextbutton{
+            position: relative;
+            top: 70%;
+            left: 80%;
+          }
+
     </style>
 
     </head>
 
   <!--HTML Structure of Page-->
   <body>
-    <div class="container"></div>
-    <div> 
-       <div class="content-box">
-           <div> 
-               <div class="header">
-                   <h1> Here is your card! </h1>
-                   <div>
-                       <div class="content-box2">
-           </div>
-           <div>
-               <div class="header2">
-                <!--Will have to add holiday greeting variable and concat them together-->
+      <div class="content-box">
+        <h1> Here is your card! </h1>
+            <div class="content-box2">
+              <div class="header2">
                   <!--Displays name input on card-->
-                   <h1 id="nameInput">From: </h1>
-                   <h1 id="name2Input">To: </h1>
-                   
-                </div>
-              </div>
-                              
-
-           <a href="fishinside.html"><button>Flip to Next Page</button></a>
-           
-    </div>
+                    <h1 id="nameInput">From: </h1>
+                    <h1 id="name2Input">To: </h1>
+            </div>
+            </div>
+            <a href="fishinside.html" class="nextbutton"><button>Flip to Next Page</button></a>
+      </div>
     <script>
       // takes "username input" and replaces "nameinput" id as the held value
       document.getElementById('nameInput').textContent += localStorage.getItem('userNameInput');

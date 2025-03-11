@@ -46,49 +46,22 @@
                 height: 70%; 
                 padding: 20px;
           }
-
-          .header {
-            position: relative;
-           text-align: center;
-           font-size: 24px;
-           color: rgb(0, 0, 0);
-           top: 300px;
-           right: 13%;
-          }
              
-          .header2 {
+          .previousbutton{
+            position: relative;
+            align-items: center;
+            left: 5%;
+            top: 70%;
+            font-size: 50px;
+          }
+
+          .buttonmenu {
           position: relative;
           align-items: center;
-          left: 34%;
-          top: -70px;
+          left: 60%;
           font-size: 50px;
-          color: #2390ca;
           }
-         
-         
-          
-          .button-container {
-            position:absolute;
-            padding: 10px 20px;
-            background: transparent;
-            align-items: flex-end;
-            display: flex;
-            right: 85px;
-            
-          
-          }
-
-          .previous-button-container {
-            position: absolute;
-            padding: 15px 40px;
-            align-items: flex-start;
-            right: 117%;
-            top: 170%;
-            flex-direction: column;
-            display: flex;
-       
-          }
-          
+      
           button {
           padding: 10px 20px;
           border-radius: 8px;
@@ -103,6 +76,14 @@
           background-color:rgb(172, 204, 237);
         }
 
+        h4{
+          position: relative;
+          text-align: center;
+          font-size: 20px;
+          color: rgb(0, 0, 0);
+          right: 13%;
+        }
+
         
 
     </style>
@@ -111,37 +92,32 @@
   <!--HTML Structure of Page-->
   <body> 
        <div class="content-box">
-          <div> 
+        <h2>Back</h2>
+          <!--previous button-->
+          <div class="previousbutton">
+            <a href="fishinside.html"><button>Flip to Previous Page</button></a>
+          </div>
+      
+          <div class="buttonmenu">
+          <!--restart button-->
+            <a href="index.html"><button onclick="restart()">Restart</button></a>
+      
+          <!--share/download/print buttons-->
+            <br>
+            <button>Share</button>
+            <br>
+            <button>Download</button>
+            <br>
+            <button>Print</button>
+          </div>
+
             <div class="content-box2">
            </div>
-          <div>
-            <div class="header">
-    <h4>This card was created using Cards & Carps!<br> Thank you for supporting us!</h4>
-</div>
-<div>
-  <div class="header2">
-<h2> Back </h2>
+            <h4>This card was created using Cards & Carps!<br> Thank you for supporting us!</h4>
+        </div>
+          
 
-    <!--previous button-->
-    <div>
-    <a href="fishinside.html"><button>Previous Page</button></a>
-    </div>
-
-    <div class="restart">
     
-    <!--regenerate/restart button-->
-    <a href="index.html"><button onclick="restart()">Restart</button></a>
-
-    <!--share/download/print buttons-->
-    <br>
-    <button>Share</button>
-    <br>
-    <button>Download</button>
-    <br>
-    <button>Print</button>
-    <!-- STILL NEED TO MAKE REGENERATE BUTTON AND FUNCTION
-    <button onclick="regenerate()">Regenerate</button></a>
-  -->    
     <script>
       
     </script>
