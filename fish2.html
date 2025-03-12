@@ -26,7 +26,7 @@
             cursor: pointer;
             background: transparent;
           }
-          
+
           /*container*/
           .content-box {
               position: absolute;
@@ -54,31 +54,34 @@
           }
 
           .header2 {
-            position: absolute;
-            top: 10%;
-            left: 20%;
-            padding: 20px;
+            position: relative;
+            top: 5%;
+            left: 5%;
             text-align: left;
-            transform: translateX(-50%);
             color: rgb(0, 0, 0);
             font-size: 16px;
-            padding-top: 10px;
           }
 
-          .nextbutton{
+          #next{
             position: relative;
-            top: 70%;
+            top: 80%; 
             left: 80%;
           }
 
-    </style>
+          #cardgreeting{
+            position: relative;
+            left: 10%;
+            top: 40%;
+          }
 
+    </style>
     </head>
 
   <!--HTML Structure of Page-->
   <body>
       <div class="content-box">
-        <h1> Here is your card! </h1>
+        <a href="fishinside.html" id="next"><button>Flip to Next Page</button></a>
+        <h1 id="cardgreeting"> Here is your card! </h1>
             <div class="content-box2">
               <div class="header2">
                   <!--Displays name input on card-->
@@ -86,7 +89,6 @@
                     <h1 id="name2Input">To: </h1>
             </div>
             </div>
-            <a href="fishinside.html" class="nextbutton"><button>Flip to Next Page</button></a>
       </div>
     <script>
       // takes "username input" and replaces "nameinput" id as the held value

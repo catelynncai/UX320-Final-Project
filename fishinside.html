@@ -41,10 +41,6 @@
                 font-family:'Poppins';
           }
     
-
-          .container {
-              text-align: center; 
-          }
           .content-box {
               position: absolute;
                 top: 50%;
@@ -57,16 +53,7 @@
                 border-radius: 30px;
                 padding: 20px; 
           }
-          .header {
-            position: absolute;
-            top: 40px;
-            left: 50%;
-            font-size: 50px;
-            transform: translateX(-50%);
-            font-weight: 400;
-            color: #2390ca;
-           
-          }
+
           .content-box2 {
               position: absolute;
               flex:auto;
@@ -75,65 +62,64 @@
                 bottom: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color: #ffffff;
                 width:60%; 
                 height: 70%; 
                 padding: 20px;
           }
           
-        
-          .rectangle {
+        /*dividing line*/
+          .middleline {
             position: absolute;
-            height: 717px;
-            width: 2px;
-            transform: translate(-50%,-50%);
+            height: 70%;
+            width: 1px;
             background-color: #555;
             left: 50%;
-            top: 50%;
+            top: 24%;
           }
           
-          img {
-          position: relative;
-          left: 90px;
-          height: 300px;
-          width: auto;
-          top: 210px ;
-          }
+        #insideimage {
+        position: relative;
+        left: 7%;
+        top: 10%;
+        height: 300px;
+        width: auto;
+        }
 
-          #message {
-            margin: 140px 0;
+        #message {
         font-size: 30px;
-        text-align: left;
-        padding-left: 20%;
-        position: absolute;
+        position: relative;
+        left: 54%;
+        top: 12%;
+        width: 26%;
+        }
+
+        #pun {
+        font-size: 25px;
+        position: relative;
         top: 10%; 
-        left: 55%;
-        transform: translateX(-50%); 
-
-          }
-
-          #pun {
-            margin: 140px 0;
-        font-size: 30px;
-        text-align: center;
-        padding-right: 40%;
-        position: absolute;
-        top: 10%; 
-        left: 40%;
-        transform: translateX(-25%); 
-
-          }
+        left: 2%;
+        width: 50%;
+        }
 
         #fact {
-          margin: 500px 0;
-        font-size: 25px;
+        font-size: 18px;
         text-align: left;
-        padding-right: 40%;
-        position: absolute;
-        top: 20%; 
-        left: 40%;
-        transform: translateX(-25%); 
-          
+        position: relative;
+        top: 10%; 
+        left: 5%;
+        width: 40%;          
+        }
+
+        #previous{
+          position: relative;
+          top: 80%; 
+          left: 0%;
+        }
+
+        #next{
+          position: relative;
+          top: 80%; 
+          left: 72%;
         }
 
 
@@ -142,38 +128,19 @@
 
   <!--HTML Structure of Page-->
   <body>
-  <!--previous/next page buttons-->
-  
-    <div class="container">
-
-    </div>
-    <div> 
-       <div class="content-box">
-           <div>  
-            <div>
-              <div class="button-container">
-              </div>            
-                 <div class="content-box2">
-                  <img id="insideimage" src="">
+      <div class="content-box"> 
+        <!--previous/next page buttons-->
+        <a href="fish2.html" id="previous"><button>Flip to Previous Page</button></a>
+        <a href="fishback.html" id="next"><button>Flip to Next Page</button></a>   
+            <p id="message"></p>   
+            <div class="content-box2">
+              <p id="pun"> </p>
+              <img id="insideimage" src="">
+              <p id="fact">Fun Fact: </p>
            </div>
-           <div>
-            <div class="rectangle">
-            </div>
-            <div>
-              <div class="header">
-                <p1>Inside</p1>
-            </div>
-           
-          
-
-           <p id="pun"> </p>
-           <p id="message"></p>
-           <p id="fact">Fun Fact: </p>
-           
-           <div class="button-container">
-          <a href="fish2.html"><button>Flip to Previous Page</button></a>
-          <a href="fishback.html"><button>Flip to Next Page</button></a>
-           </div>
+      </div>
+          <div class="middleline">
+          </div>
            
            <script>
             // takes selected pun and puts it on the page
